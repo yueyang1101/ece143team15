@@ -15,7 +15,8 @@ def plot_TradeCO2_heatmap(tradedata, feature):
     assert isinstance(tradedata, pd.DataFrame)
     assert isinstance(varaiable, str)
     
-    edata = hv.Dataset(data =tradedata,kdims=['Entity','Year'])
+    newtradedata = tradedata.dropna()
+    edata = hv.Dataset(data =newtradedata,kdims=['Entity','Year'])
     
     if feature == 'netCO2':
         %%opts HeatMap [colorbar=True,width=600,height=500,xrotation=60,tools=['hover'], symmetric=True ]( cmap='RdYlBu')
