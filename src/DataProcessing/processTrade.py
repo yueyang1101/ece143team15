@@ -19,5 +19,7 @@ def processdata(tradeCO2, countrylist, year):
     after_year = tradeCO2[is_year]
     interested_country = [item in countrylist  for item in after_year['Entity']]
     countrydata = after_year[interested_country]
+    #net = production - consumption
+    countrydata['netCO2'] =   countrydata['Production-based (tonnes )']- countrydata['Consumption-based (tonnes)']
     
     return countrydata
