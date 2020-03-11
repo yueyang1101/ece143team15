@@ -19,8 +19,8 @@ def plot_TradeCO2_heatmap(tradedata, feature):
     edata = hv.Dataset(data =newtradedata,kdims=['Entity','Year'])
     
     if feature == 'netCO2':
-        %%opts HeatMap [colorbar=True,width=600,height=500,xrotation=60,tools=['hover'], symmetric=True ]( cmap='RdYlBu')
+        %opts HeatMap [colorbar=True,width=600,height=500,xrotation=60,tools=['hover'], symmetric=True ]( cmap='RdYlBu')
     else: 
-        %%opts HeatMap [colorbar=True,width=600,height=500,xrotation=60,tools=['hover']] 
+        %opts HeatMap [colorbar=True,width=600,height=500,xrotation=60,tools=['hover']] 
     
     return edata.to(hv.HeatMap,['Year','Entity'],feature, label = feature)
