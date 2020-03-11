@@ -1,8 +1,5 @@
-import pandas as pd
-import numpy as np
-
 def processFeatures(feature, observed):
-      """
+    """
     This function takes two data frames files and merge two datasets together
     :param
         Input: feature-- > The dataframe of each of the feature info,  reading it from the CSV final_metric
@@ -28,6 +25,7 @@ def processFeatures(feature, observed):
     nfeature['avg_Volcanic'] = nfeature['Volcanic'] - means['Volcanic'] 
     nfeature['avg_land'] = nfeature['Land use']- means['Land use'] 
     nfeature['avg_Orbital'] = nfeature['Orbital changes'] - means['Orbital changes'] 
+    nfeature['avg_Ozone'] = nfeature['Ozone']- means['Ozone'] 
     
     nfeature1 = pd.merge(nfeature, nobserved, on='Year')
     
@@ -36,7 +34,9 @@ def processFeatures(feature, observed):
     nfeature1['Solar']= nfeature1['avg_solar'] 
     nfeature1['Volcanic']= nfeature1['avg_Volcanic'] 
     nfeature1['Deforestation']= nfeature1['avg_land'] 
+    nfeature1['Ozone']= nfeature1['avg_Ozone'] 
     nfeature1['Greenhouse Gas']= nfeature1['avg_GHG'] 
+    
+    nfeature1.to_csv('TempFeature.csv') 
 
     return nfeature1
-    
