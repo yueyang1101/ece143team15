@@ -20,15 +20,15 @@ def plot_feature_VS_Observed(feature, df, linecolor):
     fig = go.Figure()
     
     fig.add_trace(go.Scatter(
-                x=nsolar1['Year'],
-                y=nsolar1[feature],
+                x=df['Year'],
+                y=df[feature],
                 name=feature,
                 line_color=linecolor,
                 opacity=1))
     
     fig.add_trace(go.Scatter(
-                x=nsolar1['Year'],
-                y=nsolar1['Observed'],
+                x=df['Year'],
+                y=df['Observed'],
                 name="Observed",
                 line_color='dimgray',
                 opacity=0.5) )
