@@ -32,7 +32,7 @@ Steps:
      
      -> run command: python src/plots/FeatureVSObservedTemp.py 
      
-     -> description: The file reads in the data from "data/FinalData" folder and plots graph comparing the selected feature vs the observed earth temp. 
+     -> description: The file reads in the data from data/FinalData/TempFeature.csv folder and plots graph comparing the selected feature vs the observed earth temp. 
    
    b) Plot_Trade_CO2_Heatmap.py 
       
