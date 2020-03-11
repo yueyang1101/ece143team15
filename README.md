@@ -20,7 +20,9 @@ Steps:
            
            -> run command: python src/DataProcessing/processTrade.py
            
-           -> description: The file reads in the data from data/OriginalData/production-vs-consumption-co2-emissions.csv, and generate the data with the net CO2 emission
+           -> description: The file reads in the data from data/OriginalData/forcings.csv and data/OriginalData/fobserved.csv , and generate a newdataframe with all the feaure info stored
+           
+           -> data generated: data generated is stored in data/FinalData
     
  2. Plotting
    
