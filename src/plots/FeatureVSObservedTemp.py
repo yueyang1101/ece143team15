@@ -39,4 +39,5 @@ def plot_feature_VS_Observed(feature, df, linecolor):
                     yaxis_title="Average Temp (K)",
                   title_text= feature + " vs Observed",
                  showlegend=True)
+ 
     fig.show()
