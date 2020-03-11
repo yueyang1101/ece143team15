@@ -11,7 +11,7 @@ Steps:
            
            -> run command: python src/DataProcessing/processTrade.py
            
-           -> description: The file reads in the data from data/OriginalData/production-vs-consumption-co2-emissions.csv, and generate the data with the net CO2 emission
+           -> description: The file reads in the data from data/OriginalData/production-vs-consumption-co2-emissions.csv, and generate the data with the net CO2 emission and stored the data in data/FinalData/HeatmapData 
 
 
      b)processFeatureTemp.py 
@@ -20,9 +20,9 @@ Steps:
            
            -> run command: python src/DataProcessing/processTrade.py
            
-           -> description: The file reads in the data from data/OriginalData/forcings.csv and data/OriginalData/fobserved.csv , and generate a newdataframe with all the feaure info stored
+           -> description: The file reads in the data from data/OriginalData/forcings.csv and data/OriginalData/fobserved.csv , and generate a newdataframe with all the feaure info stored as 
            
-           -> data generated: data generated is stored in data/FinalData
+           -> data generated: data generated is stored in data/FinalData/TempFeature.csv
     
  2. Plotting
    
