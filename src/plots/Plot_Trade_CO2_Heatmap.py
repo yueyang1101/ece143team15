@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import holoviews as hv
 import hvplot.pandas
-hv.extension('bokeh')
+from holoviews.ipython.magics import OptsMagic
 
 
 def plot_TradeCO2_heatmap(tradedata, feature):
@@ -13,14 +13,13 @@ def plot_TradeCO2_heatmap(tradedata, feature):
     :return: a heatmap lpot
     '''
     assert isinstance(tradedata, pd.DataFrame)
-    assert isinstance(varaiable, str)
+    assert isinstance(feature, str)
     
     newtradedata = tradedata.dropna()
+    
     edata = hv.Dataset(data =newtradedata,kdims=['Entity','Year'])
     
-    if feature == 'netCO2':
-        %opts HeatMap [colorbar=True,width=600,height=500,xrotation=60,tools=['hover'], symmetric=True ]( cmap='RdYlBu')
-    else: 
-        %opts HeatMap [colorbar=True,width=600,height=500,xrotation=60,tools=['hover']] 
+    om = OptsMagic()
+    
     
     return edata.to(hv.HeatMap,['Year','Entity'],feature, label = feature)
