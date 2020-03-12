@@ -42,4 +42,15 @@ Steps:
            -> run command: python src/plots/HealthyVsUnhealthy.py
            
            -> description: The file reads in the data from data/FinalData/HeatmapData folder and plots the heatmap of selected country and selected feauture
+      b) Temperature heat map
+           
+           -> location: src/plots/TemperatureMap.py
+           
+           -> functions: 
+           * get_figure(year: int): create bokeh figure object
+           * save_figure(year: int, filename: str): save figure to filename
+           * show_figure(year: int): show figure in ipython
+           * generate_gif(plots_directory: str, file_path: str, start: int, end: int, step: int = 1, fps: int = 5): geterate gif from plots
+           * show_gif(file_path): show gif in ipython
+           -> description: it is a module that can be used to plot temperature heatmap and also create gif animations. It is called in the ipython file.
     
