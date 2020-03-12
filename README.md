@@ -42,7 +42,7 @@ Steps:
            -> run command: python src/plots/HealthyVsUnhealthy.py
            
            -> description: The file reads in the data from data/FinalData/HeatmapData folder and plots the heatmap of selected country and selected feauture
-      b) Temperature heat map
+      c) Temperature heat map
            
            -> location: src/plots/TemperatureMap.py
            
