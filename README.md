@@ -47,7 +47,7 @@ Steps:
       
            -> location: src/DataProcessing/process_1_5.py
            
-           -> run command: python src/VisualizationData/process_1.5.py
+           -> run command: python src/VisualizationData/process_1_5.py
            
            -> description: The file reads in data from Data/OriginalData/mitigation_curves_1.5C_191203_data.csv, and generates two dataframes: one with just the historical data and other with 1.5 degree mitigation curves data
            
