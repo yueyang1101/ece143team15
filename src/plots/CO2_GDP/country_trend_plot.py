@@ -1,6 +1,7 @@
-def plot(csvaddress, countryname, ):
+def plot(csvaddress, countryname):
     """
     @Author: Haoyang Ding
+    plot 6 countrys' co2 emission and gdp trends
     :param csvaddress: file address, string
     :param countryname: country name, string
     :return: None
@@ -72,6 +73,6 @@ def plot(csvaddress, countryname, ):
     ax.set_xlabel('year', fontsize=25)
 
     figname = countryname + "co2emission-gdp.png"
-    figpath = os.path.abspath(os.path.join(os.getcwd(), "Image\CO2_GDP", figname))
+    figpath = os.path.abspath(os.path.join(os.getcwd(), "Image/CO2_GDP", figname))
     plt.savefig(figpath, bbox_inches='tight')
     plt.show()

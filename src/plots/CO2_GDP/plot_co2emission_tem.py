@@ -1,9 +1,9 @@
 def plot(csvaddress):
     """
     @Author: Haoyang Ding
-    plot 6 countrys' co2 emission and gdp trends
+    plot a trend chart of global co2 emissions and temperature
     :param csvaddress: file address
-    :return:
+    :return: None
     """
     assert isinstance(csvaddress, str)
     import pandas as pd
@@ -25,5 +25,5 @@ def plot(csvaddress):
     ax2.set_ylabel('Temperature anomaly',fontsize=25)
     ax.set_xlabel('year', fontsize=25)
 
-    plt.savefig(r'Image\CO2_GDP\co2emission-tem.jpg', bbox_inches='tight')
+    plt.savefig(r'Image/CO2_GDP/co2emission-tem.jpg', bbox_inches='tight')
     plt.show()
