@@ -20,9 +20,9 @@ def process1_5(df15 = pd.read_csv("Data/OriginalData/mitigation_curves_1.5C_1912
 
 	df_historical_data = df15[['Year','Historical']]
 
-	df_historical_data.to_csv('Data/FinalData/Historical_CO2_Emissions_Data.csv')
+	df_historical_data.to_csv('Data/VisualizationData/Historical_CO2_Emissions_Data.csv')
 
-	df15.to_csv('Data/FinalData/1.5_Mitigation_Curves_Data.csv')
+	df15.to_csv('Data/VisualizationData/1.5_Mitigation_Curves_Data.csv')
 
 	return [df_historical_data, df15]
 process1_5()

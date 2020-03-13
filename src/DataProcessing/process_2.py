@@ -17,5 +17,5 @@ def process2(df2 = pd.read_csv("Data/OriginalData/mitigation_curves_2.0C_191203_
 	df2.drop(indexNames , inplace=True)
 
 
-	df2.to_csv('Data/FinalData/2_Mitigation_Curves_Data.csv')
+	df2.to_csv('Data/VisualizationData/2_Mitigation_Curves_Data.csv')
 process2()
