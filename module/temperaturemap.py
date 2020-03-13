@@ -21,11 +21,11 @@ df = pd.read_csv(datafile, names=['country', 'code', 'year', 'temperature'], ski
 
 
 def get_figure(year: int):
-    '''
+    """
     create bokeh figure object
     :param year: year
     :return: figure
-    '''
+    """
     df_year = df[df['year'] == year]
     # Merge dataframes gdf and df_2016.
     merged = gdf.merge(df_year, left_on='country_code', right_on='code')
@@ -70,29 +70,29 @@ def get_figure(year: int):
 
 
 def save_figure(year: int, filename: str):
-    '''
+    """
     save figure to filename
     :param year: int
     :param filename: str
-    :return: 
-    '''
+    :return:
+    """
     p = get_figure(year)
     export_png(p, filename=filename)
 
 
 def show_figure(year: int):
-    '''
+    """
     show figure in ipython
     :param year: int
     :return: void
-    '''
+    """
     p = get_figure(year)
     output_notebook()
     show(p)
 
 
 def generate_gif(plots_directory: str, file_path: str, start: int, end: int, step: int = 1, fps: int = 5):
-    '''
+    """
     geterate gif from plots
     :param plots_directory: str path
     :param file_path: str path
@@ -100,8 +100,8 @@ def generate_gif(plots_directory: str, file_path: str, start: int, end: int, ste
     :param end: end year
     :param step: step of year between gif
     :param fps: fps of gif
-    :return: 
-    '''
+    :return:
+    """
     file_names = sorted((fn for fn in os.listdir(plots_directory) if fn.endswith('png')))
     images = []
     count = 0
@@ -117,9 +117,9 @@ def generate_gif(plots_directory: str, file_path: str, start: int, end: int, ste
 
 
 def show_gif(file_path):
-    '''
+    """
     show gif in ipython
     :param file_path: gif file path
-    :return: 
-    '''
+    :return:
+    """
     return HTML('<img src="' + file_path + '?invalidateCache=' + str(random.random()) + '">')

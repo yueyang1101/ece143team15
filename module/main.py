@@ -4,14 +4,22 @@ import correlationdata
 import treemapdata
 
 if __name__ == '__main__':
+    """
+    @Author Haoyang Ding
+    main function
+    generate data files for visualization
+    """
     nameco2 = "co2-concentration-long-term.xlsx"
     nametem = "temperature-anomaly.xlsx"
     nameco2emi = "annual-co-emissions-by-region.xlsx"
     namegdp = "average-real-gdp-per-capita-across-countries-and-regions.xlsx"
 
+    developed=["United States", "Japan", "United Kingdom", "Germany", "France", "Italy", "Canada", "Switzerland", "Belgium", "Netherlands", "Finland", "Norway", "Denmark", "Sweden", "Greece", "Iceland", "Portugal", "Spain", "Austria", "Australia", "Ireland", "South Africa"]
+    developing=["Argentina", "Malaysia", "Panama", "Israel", "Sri Lanka", "Vietnam", "Cyprus", "Czechoslovakia", "Chile", "Greece", "Peru", "Nepal", "Egypt", "China", "South Korea", "Thailand", "Turkey", "Brazil", "India", "Philippines", "North Korea", "Bolivia"]
+
     co2concentration_tem.co2concentration_tem(nameco2, nametem)
     co2emission_tem.co2emission_tem(nameco2emi, nametem)
-    correlationdata.correlationdata(nameco2emi, namegdp)
+    correlationdata.correlationdata(nameco2emi, namegdp, developed, developing)
 
     africa = ["AFRICA", "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cameroon", "Cape Verde",
               "Central African Republic", "Chad", "Comoros", "Republic of the Congo",
