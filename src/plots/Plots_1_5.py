@@ -1,6 +1,5 @@
-
 import pandas as pd
-def plot_1_5_animation(df_historical_data = pd.read_csv("Data/FinalData/Historical_CO2_Emissions_Data.csv"),\
+def plot_1_5_animation(df_historical_data = pd.read_csv("Data/VisualizationData/Historical_CO2_Emissions_Data.csv"),\
 	df15 = pd.read_csv("Data/VisualizationData/1.5_Mitigation_Curves_Data.csv")):
 	'''
 	This function plots the historical CO2 Emissions from 1900-2019 &
@@ -50,9 +49,9 @@ def plot_1_5_animation(df_historical_data = pd.read_csv("Data/FinalData/Historic
 
 	plt.title('CO2 Emission Mitigation Curves to Limit Warming to 1.5'+ degree + 'C by 2100')
 	plt.show()
-	anim.save('1.5 Degrees Mitigation.gif', writer='imagemagick', fps=4)
+	anim.save('image/1.5 Degrees Mitigation.gif', writer='imagemagick', fps=4)
 
-def plot_1_5_2020(df_historical_data = pd.read_csv("Data/FinalData/Historical_CO2_Emissions_Data.csv"),\
+def plot_1_5_2020(df_historical_data = pd.read_csv("Data/VisualizationData/Historical_CO2_Emissions_Data.csv"),\
 	df15 = pd.read_csv("Data/VisualizationData/1.5_Mitigation_Curves_Data.csv")):
 	'''
 	This function plots the historical CO2 Emissions from 1900-2019 &

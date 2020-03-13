@@ -1,4 +1,4 @@
-
+import pandas as pd
 def plot_2_animation(df_historical_data = pd.read_csv("Data/VisualizationData/Historical_CO2_Emissions_Data.csv"),\
 	df2 = pd.read_csv("Data/VisualizationData/2_Mitigation_Curves_Data.csv")):
 	'''
@@ -49,9 +49,9 @@ def plot_2_animation(df_historical_data = pd.read_csv("Data/VisualizationData/Hi
 
 	plt.title('CO2 Emission Mitigation Curves to Limit Warming to 2'+ degree + 'C by 2100')
 	plt.show()
-	anim.save('2 Degrees Mitigation.gif', writer='imagemagick', fps=4)
+	anim.save('Image/2 Degrees Mitigation.gif', writer='imagemagick', fps=4)
 
-def plot_2_2020(df_historical_data = pd.read_csv("Data/VisualizationDataHistorical_CO2_Emissions_Data.csv"),\
+def plot_2_2020(df_historical_data = pd.read_csv("Data/VisualizationData/Historical_CO2_Emissions_Data.csv"),\
 	df2 = pd.read_csv("Data/VisualizationData/2_Mitigation_Curves_Data.csv")):
 	'''
 	This function plots the historical CO2 Emissions from 1900-2019 &
