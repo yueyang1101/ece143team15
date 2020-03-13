@@ -141,9 +141,9 @@ Steps:
            -> description: A function which is used to generate and save a wordcloud image corresponds to each country's correlation rate between co2 emissions and GDP. It is called in the ipython file.
            
           
-     i) 1.5_Plots.py
+     i) Plots_1.5.py
            
-           -> location: src/plots/1.5_Plots.py 
+           -> location: src/plots/Plots_1.5.py 
            
            -> functions: 
                plot_1_5_animation(df_historical_data, df15): generate an animated plot with 1.5 mitigation curves and save it.
@@ -152,9 +152,9 @@ Steps:
            -> description: The animation function plots the historical CO2 Emissions from 1900-2019 & plots the mitigation curves from 2000-2026 to meet +1.5C degrees in an animation and the animation is also saved as a GIF. 2nd function plots the historical CO2 Emissions from 1900-2019 & plots the mitigation curve starting at the beginning of 2020 to meet +1.5C degrees.
            
           
-     j) 2_Plots.py
+     j) Plots_2.py
            
-           -> location: src/plots/2_Plots.py
+           -> location: src/plots/Plots_2.py
            
            -> functions: 
                plot_1_5_animation(df_historical_data, df15): generate an animated plot with 2 mitigation curves and save it.
