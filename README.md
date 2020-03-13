@@ -41,7 +41,30 @@ Steps:
            Generate six dataframes for six countries' co2 emissions and GDP, a dataframe of all countries' correlation rate between co2 emissions and GDP, a dictionary of cleaned co2 emissions data for all countries, two dataframe of 44 picked countries' correlation rate, a dictionary of co2 emissions from all continents and corresponding countries, a txt file of countries' name for wordcloud image.
            
            -> data generated: data generated is stored in Data/VisualizationData/CO2_GDP with 15 files.
-    
+      
+      
+      d)process_1.5.py 
+      
+           -> location: src/DataProcessing/process_1.5.py
+           
+           -> run command: python src/DataProcessing/process_1.5.py
+           
+           -> description: The file reads in data from Data/OriginalData/mitigation_curves_1.5C_191203_data.csv, and    generates two dataframes: one with just the historical data and other with 1.5 degree mitigation curves data
+           
+           -> data generated: data generated is stored in Data/FinalData/1.5_Mitigation_Curves_Data.csv and Data/FinalData/Historical_CO2_Emissions_Data.csv
+           
+   
+      d)process_2.py 
+      
+           -> location: src/DataProcessing/process_2.py
+           
+           -> run command: python src/DataProcessing/process_2.py
+           
+           -> description: The file reads in data from Data/OriginalData/mitigation_curves_2.0C_191203_data.csv, and    generates one dataframe with 2 degree mitigation curves data
+           
+           -> data generated: data generated is stored in Data/FinalData/2_Mitigation_Curves_Data.csv
+           
+           
  2. Plotting
    
      a)Feature VS ObservedTemp
