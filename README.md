@@ -34,7 +34,7 @@ Steps:
       
            -> location: src/DataProcessing/CO2_GDP/main.py
            
-           -> run command: python src/DataProcessing/CO2_GDP/main.py
+           -> run command: python src/VisualizationData/CO2_GDP/main.py
            
            -> description: Clean data and generate some specific dataframes for CO2_GDP part. 
            The file reads in data from Data/OriginalData/annual-co-emissions-by-region.xlsx, average-real-gdp-per-capita-across-countries-and-regions.xlsx, co2-concentration-long-term.xlsx, temperature-anomaly.xlsx. 
@@ -47,7 +47,7 @@ Steps:
       
            -> location: src/DataProcessing/process_1.5.py
            
-           -> run command: python src/DataProcessing/process_1.5.py
+           -> run command: python src/VisualizationData/process_1.5.py
            
            -> description: The file reads in data from Data/OriginalData/mitigation_curves_1.5C_191203_data.csv, and generates two dataframes: one with just the historical data and other with 1.5 degree mitigation curves data
            
