@@ -16,7 +16,7 @@ Steps:
            
            -> run command: python src/DataProcessing/processTrade.py
            
-           -> description: The file reads in data from data/OriginalData/production-vs-consumption-co2-emissions.csv, and generate the data with the net CO2 emission and stored the data in data/FinalData/HeatmapData 
+           -> description: The file reads in data from data/OriginalData/production-vs-consumption-co2-emissions.csv, and generate the data with the net CO2 emission and stored the data in data/VisualizationData/HeatmapData 
 
 
      b) processFeatureTemp.py 
@@ -27,7 +27,7 @@ Steps:
            
            -> description: The file reads in data from Data/OriginalData/forcings.csv and data/OriginalData/fobserved.csv , and generate a new dataframe with all the feaure info stored as 
            
-           -> data generated: data generated is stored in data/FinalData/TempFeature.csv
+           -> data generated: data generated is stored in data/VisualizationData/TempFeature.csv
            
            
      c) main.py 
@@ -51,7 +51,7 @@ Steps:
            
            -> description: The file reads in data from Data/OriginalData/mitigation_curves_1.5C_191203_data.csv, and generates two dataframes: one with just the historical data and other with 1.5 degree mitigation curves data
            
-           -> data generated: data generated is stored in Data/FinalData/1.5_Mitigation_Curves_Data.csv and Data/FinalData/Historical_CO2_Emissions_Data.csv
+           -> data generated: data generated is stored in Data/VisualizationData/1.5_Mitigation_Curves_Data.csv and Data/FinalData/Historical_CO2_Emissions_Data.csv
            
    
       e) process_2.py 
@@ -62,7 +62,7 @@ Steps:
            
            -> description: The file reads in data from Data/OriginalData/mitigation_curves_2.0C_191203_data.csv, and generates one dataframe with 2 degree mitigation curves data
            
-           -> data generated: data generated is stored in Data/FinalData/2_Mitigation_Curves_Data.csv
+           -> data generated: data generated is stored in Data/VisualizationData/2_Mitigation_Curves_Data.csv
            
            
  2. Plotting
@@ -73,7 +73,7 @@ Steps:
            
            -> run command: python src/plots/FeatureVSObservedTemp.py 
            
-           -> description: The file reads in the data from data/FinalData/TempFeature.csv folder and plots graph comparing the selected feature vs the observed earth temp. 
+           -> description: The file reads in the data from data/VisualizationData/TempFeature.csv folder and plots graph comparing the selected feature vs the observed earth temp. 
      
    
      b) Plot_Trade_CO2_Heatmap.py 
@@ -82,7 +82,7 @@ Steps:
            
            -> run command: python src/plots/Plot_Trade_CO2_Heatmap.py
            
-           -> description: The file reads in the data from data/FinalData/HeatmapData folder and plots the heatmap of selected country and selected feauture
+           -> description: The file reads in the data from data/VisualizationData/HeatmapData folder and plots the heatmap of selected country and selected feauture
      c) Temperature heat map
            
            -> location: src/plots/TemperatureMap.py
