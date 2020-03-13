@@ -1,5 +1,7 @@
 
-def plot_1_5_animation(df_historical_data, df15):
+import pandas as pd
+def plot_1_5_animation(df_historical_data = pd.read_csv("Data/FinalData/Historical_CO2_Emissions_Data.csv"),\
+	df15 = pd.read_csv("Data/FinalData/1.5_Mitigation_Curves_Data.csv")):
 	'''
 	This function plots the historical CO2 Emissions from 1900-2019 &
 	plots the mitigation curves from 2000-2026 to meet +1.5C degrees 
@@ -9,7 +11,7 @@ def plot_1_5_animation(df_historical_data, df15):
 				df15 --> The dataframe of the mitigation rates for max +1.5C degrees
 		Output: Plot of the curves and animated GIF
 	'''
-	import pandas as pd
+	
 	import matplotlib.pyplot as plt
 	from matplotlib.animation import FuncAnimation
 	degree = u'\N{DEGREE SIGN}'
@@ -50,7 +52,8 @@ def plot_1_5_animation(df_historical_data, df15):
 	plt.show()
 	anim.save('1.5 Degrees Mitigation.gif', writer='imagemagick', fps=4)
 
-def plot_1_5_2020(df_historical_data, df15):
+def plot_1_5_2020(df_historical_data = pd.read_csv("Data/FinalData/Historical_CO2_Emissions_Data.csv"),\
+	df15 = pd.read_csv("Data/FinalData/1.5_Mitigation_Curves_Data.csv")):
 	'''
 	This function plots the historical CO2 Emissions from 1900-2019 &
 	plots the mitigation curve starting at the beginning of 2020 to 
