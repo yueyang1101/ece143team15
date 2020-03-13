@@ -43,7 +43,7 @@ Steps:
            -> data generated: data generated is stored in Data/VisualizationData/CO2_GDP with 15 files.
       
       
-      d) process_1.5.py 
+      d) process_1_5.py 
       
            -> location: src/DataProcessing/process_1.5.py
            
@@ -141,7 +141,7 @@ Steps:
            -> description: A function which is used to generate and save a wordcloud image corresponds to each country's correlation rate between co2 emissions and GDP. It is called in the ipython file.
            
           
-     i) Plots_1.5.py
+     i) Plots_1_5.py
            
            -> location: src/plots/Plots_1.5.py 
            
