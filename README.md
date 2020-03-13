@@ -45,7 +45,7 @@ Steps:
       
       d) process_1_5.py 
       
-           -> location: src/DataProcessing/process_1.5.py
+           -> location: src/DataProcessing/process_1_5.py
            
            -> run command: python src/VisualizationData/process_1.5.py
            
